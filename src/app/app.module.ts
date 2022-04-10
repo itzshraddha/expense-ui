@@ -9,6 +9,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 import { UserService } from './user.service';
 import { ExpenseListComponent } from './expense-list/expense-list.component';
 import { ExpenseFormComponent } from './expense-form/expense-form.component';
+import { ExpenseService } from './expense.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { ExpenseFormComponent } from './expense-form/expense-form.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService,ExpenseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
